@@ -3,7 +3,7 @@
   $index = 'index';
   $username = getLoginUsername();
   foreach($navs as $k=>$v) {
-    if($v['c'] == 'admin' && $username != 'rehellinen'){
+    if($v['c'] == 'admin' && $username != 'admin'){
       unset($navs[$k]);
     }
   }

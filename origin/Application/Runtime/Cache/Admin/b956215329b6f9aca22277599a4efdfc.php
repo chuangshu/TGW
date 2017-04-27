@@ -44,7 +44,7 @@
 <div id="wrapper">
 
     <?php
- $navs = D("Menu")->getAdminMenus(); $index = 'index'; $username = getLoginUsername(); foreach($navs as $k=>$v) { if($v['c'] == 'admin' && $username != 'rehellinen'){ unset($navs[$k]); } } ?>
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; $username = getLoginUsername(); foreach($navs as $k=>$v) { if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } ?>
 
 
 <!-- Navigation -->
@@ -98,9 +98,6 @@
                 <ol class="breadcrumb">
                     <li>
                         <i class="fa fa-dashboard"></i>  <a href="admin.php?c=menu">菜单管理</a>
-                    </li>
-                    <li class="active">
-                        <i class="fa fa-table"></i><?php echo ($nav); ?>
                     </li>
                 </ol>
             </div>

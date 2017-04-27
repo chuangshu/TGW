@@ -42,7 +42,7 @@
 <div id="wrapper">
 
     <?php
- $navs = D("Menu")->getAdminMenus(); $index = 'index'; ?>
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; $username = getLoginUsername(); foreach($navs as $k=>$v) { if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } ?>
 
 
 <!-- Navigation -->

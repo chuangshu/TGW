@@ -42,7 +42,7 @@
 <div id="wrapper">
 
   <?php
- $navs = D("Menu")->getAdminMenus(); $index = 'index'; $username = getLoginUsername(); foreach($navs as $k=>$v) { if($v['c'] == 'admin' && $username != 'rehellinen'){ unset($navs[$k]); } } ?>
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; $username = getLoginUsername(); foreach($navs as $k=>$v) { if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } ?>
 
 
 <!-- Navigation -->
@@ -129,7 +129,7 @@
                 <input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="">
               </div>
             </div>
-            <div class="form-group">
+            <!--<div class="form-group">
               <label for="inputname" class="col-sm-2 control-label">标题颜色:</label>
               <div class="col-sm-5">
                 <select class="form-control" name="title_font_color">
@@ -137,7 +137,7 @@
                       <?php if(is_array($titleFontColor)): foreach($titleFontColor as $key=>$color): ?><option value="<?php echo ($key); ?>"><?php echo ($color); ?></option><?php endforeach; endif; ?>
                 </select>
               </div>
-            </div>
+            </div>-->
             <div class="form-group">
               <label for="inputname" class="col-sm-2 control-label">所属栏目:</label>
               <div class="col-sm-5">
