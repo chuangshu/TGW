@@ -6,9 +6,9 @@
   maximum-scale=1.0, 
   user-scalable=no">
 
-  <link href="./css/sdcms.css" rel="stylesheet" type="text/css">
-  <link href="./css/nav.color.css" rel="stylesheet">
-   <link rel="stylesheet" href="../../../../Public/css/bootstrap.min.css">
+  <link href="Public/css/sdcms.css" rel="stylesheet" type="text/css">
+  <link href="Public/css/nav.color.css" rel="stylesheet">
+   <link rel="stylesheet" href="Public/css/bootstrap.min.css">
      <title>共青团暨南大学珠海校区工作委员会</title>
     <!--[if lt IE 9]>
     	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -92,7 +92,7 @@
 </head>
 <body id="set_range">
     <div class="col-md-12" id="title_img">
-            <img style="display:block;width:100%;margin-top:10px;margin-bottom:10px;" src="../../../../Public/images/712824885406454302.jpg"">
+            <img style="display:block;width:100%;margin-top:10px;margin-bottom:10px;" src="Public/images/712824885406454302.jpg"">
     </div>
 
 <!--电脑端的网页-->
@@ -113,7 +113,7 @@
 <!--电脑端的网页-->
 
 <!--显示手机端的网页-->
-    <nav class="navbar navbar-default" id="nav_mobile" style="" >
+    <nav class="navbar navbar-default" id="nav_mobile" >
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header" >
@@ -174,31 +174,31 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <a href="#" target="_blank"><img src="../../../../Public/images/2016122064046849.jpg" alt="1 slide"></a>
+                <a href="#" target="_blank"><img src="Public/images/2016122064046849.jpg" alt="1 slide"></a>
                 <div class="carousel-caption">
                 <p>...</p>
                 </div>
             </div>
             <div class="item">
-                <a href="#" target="_blank"><img src="../../../../Public/images/2016121873357097.jpg" alt="2 slide"></a>
+                <a href="#" target="_blank"><img src="Public/images/2016121873357097.jpg" alt="2 slide"></a>
                 <div class="carousel-caption">
                 <p>...</p>
                 </div>
             </div>
             <div class="item">
-                <a href="#" target="_blank"><img src="../../../../Public/images/2016121784422385.jpg" alt="3 slide"></a>
+                <a href="#" target="_blank"><img src="Public/images/2016121784422385.jpg" alt="3 slide"></a>
                 <div class="carousel-caption">
                 <p>...</p>
                 </div>
             </div>
             <div class="item">
-                <a href="#" target="_blank"><img src="../../../../Public/images/2016121001889589.jpg" alt="4 slide"></a>
+                <a href="#" target="_blank"><img src="Public/images/2016121001889589.jpg" alt="4 slide"></a>
                 <div class="carousel-caption">
                 <p>...</p>
                 </div>
             </div>
             <div class="item">
-                <a href="#" target="_blank"><img src="../../../../Public/images/2016120950235589.jpg" alt="5 slide"></a>
+                <a href="#" target="_blank"><img src="Public/images/2016120950235589.jpg" alt="5 slide"></a>
                 <div class="carousel-caption">
                 <p>...</p>
                     </div>
@@ -242,164 +242,152 @@
   </div>
 </div>
   <div class="col-md-12">
-  <img style="display:block;width:100%;" id="img_middle" src="../../../../Public/images/206888339129661881.jpg"">
+    <img style="display:block;width:100%;" id="img_middle" src="Public/images/206888339129661881.jpg"">
   </div>
 
 
-
-
 <div class="col-md-12" id="images_information">
-<div class="panel panel-primary setbord">
-<div class="panel-heading">
-<h3 class="panel-title">图文信息
-<a href="#"><span style="float:right;">信息排行</span></a>
-<a href="#"><span style="float:right;">最新信息&nbsp;&nbsp;</span></a>
-</h3>
-</div>
-<div class="panel-body">
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images/6.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images/7.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images/8.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images/9.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images./10.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images/11.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images./12.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images./13.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images./14.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-
-      <div class="col-md-2" style=" border: 1px solid #990000" >
-      <img src="../../../../Public/images./15.jpg" class="img-responsive">
-        <h4>...</h4>
-      </div>
-            </div>
-            </div>
-            </div>
-
-
-    <div class="col-md-6"  id="news_center">
-        <div class="panel panel-primary setbord">
-<div class="panel-heading">
-    <h3 class="panel-title">新闻中心<a href="#"><span style="float:right;">更多>></span></a></h3>
-</div>
-<div class="panel-body">
-<ol class="list-unstyled">
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            </ol>
-</div>
-        </div>
+  <div class="panel panel-primary setbord">
+    <div class="panel-heading">
+      <h3 class="panel-title">图文信息
+        <a href="#"><span style="float:right;">信息排行</span></a>
+        <a href="#"><span style="float:right;">最新信息&nbsp;&nbsp;</span></a>
+      </h3>
     </div>
-
-
-
-        <div class="col-md-6"  id="fabric_construct">
-        <div class="panel panel-primary setbord">
-<div class="panel-heading">
-    <h3 class="panel-title">组织建设<a href="#"><span style="float:right;">更多>></span></a></h3>
-</div>
-<div class="panel-body">
-<ol class="list-unstyled">
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            </ol>
-</div>
+    <div class="panel-body">
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images/6.jpg" class="img-responsive">
+          <h4>...</h4>
         </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images/7.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images/8.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images/9.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images./10.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images/11.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images./12.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images./13.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images./14.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+
+        <div class="col-md-2" style=" border: 1px solid #990000" >
+        <img src="Public/images./15.jpg" class="img-responsive">
+          <h4>...</h4>
+        </div>
+              </div>
+              </div>
+              </div>
+
+
+      <div class="col-md-6"  id="news_center">
+          <div class="panel panel-primary setbord">
+    <div class="panel-heading">
+      <h3 class="panel-title">新闻中心<a href="#"><span style="float:right;">更多>></span></a></h3>
     </div>
+    <div class="panel-body">
+      <ol class="list-unstyled">
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6"  id="fabric_construct">
+  <div class="panel panel-primary setbord">
+    <div class="panel-heading">
+        <h3 class="panel-title">组织建设<a href="#"><span style="float:right;">更多>></span></a></h3>
+    </div>
+    <div class="panel-body">
+      <ol class="list-unstyled">
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
         
-
-
-
-
-
-
-
-
-         <div class="col-md-6" id="celebrities_story">
-        <div class="panel panel-primary setbord">
-<div class="panel-heading">
-    <h3 class="panel-title">人物专访<a href="#"><span style="float:right;">更多>></span></a></h3>
-</div>
-<div class="panel-body">
-<ol class="list-unstyled">
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            </ol>
-</div>
-        </div>
+<div class="col-md-6" id="celebrities_story">
+  <div class="panel panel-primary setbord">
+    <div class="panel-heading">
+        <h3 class="panel-title">人物专访<a href="#"><span style="float:right;">更多>></span></a></h3>
     </div>
+    <div class="panel-body">
+      <ol class="list-unstyled">
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
        
 
 
 
-        <div class="col-md-6" id="image_center">
-        <div class="panel panel-primary setbord">
-<div class="panel-heading">
-    <h3 class="panel-title">图片专区<a href="#"><span style="float:right;">更多>></span></a></h3>
-</div>
-<div class="panel-body">
-<ol class="list-unstyled">
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            </ol>
-</div>
-        </div>
+<div class="col-md-6" id="image_center">
+  <div class="panel panel-primary setbord">
+    <div class="panel-heading">
+        <h3 class="panel-title">图片专区<a href="#"><span style="float:right;">更多>></span></a></h3>
     </div>
+    <div class="panel-body">
+      <ol class="list-unstyled">
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
 
 
-
+<!--显示下载链接-->
 <div id="Download_frame" align="center" style=" margin-top:px;">
-  <div style="">
-
+  <div>
       <div class="col-md-12">
         <div class="panel panel-default" style=" border: 1px solid #FF3300">
           <div class="panel-heading" id="title06"> 公事文件下载区</div>
@@ -433,52 +421,47 @@
           </div>
         </div>
       </div>
-
   </div>
-</div><!--显示下载链接-->
-
-
-
+</div>
+<!--显示下载链接-->
 
 <div class="col-md-12" id="more_about">
-<div class="panel panel-primary setbord">
-<div class="panel-heading">
-<h3 class="panel-title">友情链接
-<a href="#"><span style="float:right;">更多链接</span></a>
-<a href="#"><span style="float:right;">申请链接&nbsp;&nbsp;</span></a>
-<a href="#"><span style="float:right;">首页链接&nbsp;&nbsp;</span></a>
-</h3>
+  <div class="panel panel-primary setbord">
+    <div class="panel-heading">
+      <h3 class="panel-title">友情链接
+        <a href="#"><span style="float:right;">更多链接</span></a>
+        <a href="#"><span style="float:right;">申请链接&nbsp;&nbsp;</span></a>
+        <a href="#"><span style="float:right;">首页链接&nbsp;&nbsp;</span></a>
+      </h3>
+    </div>
+  </div>
+  <div class="panel-body">
+    <a href="#"><img src="../../../../Public/images/#"></a>
+    <a href="#"><img src="../../../../Public/images/#"></a>
+    <a href="#"><img src="../../../../Public/images/#"></a>
+    <a href="#"><img src="../../../../Public/images/#"></a>
+    <a href="#"><img src="../../../../Public/images/#"></a>
+  </div>
+          
+  <footer>
+          <p class="text-center"><a href="#">网站首页</a>  |  <a href="#">意见反馈</a>  |  <a href="#">网站地图</a>  |  <a href="#">RSS订阅</a>  |  <a href="#">匿名投稿</a></p>
+          <p class="text-center">版权所有：共青团暨南大学珠海校区工作委员会&nbsp;&nbsp;&nbsp;
+          网站维护：暨南人网络联盟</p>
+          <p class="text-center">...</p>
+  </footer>
 </div>
-   </div>
-<div class="panel-body">
-<a href="#"><img src="../../../../Public/images/#"></a>
-<a href="#"><img src="../../../../Public/images/#"></a>
-<a href="#"><img src="../../../../Public/images/#"></a>
-<a href="#"><img src="../../../../Public/images/#"></a>
-<a href="#"><img src="../../../../Public/images/#"></a>
-            </div>
-            
 
-
-<footer>
-        <p class="text-center"><a href="#">网站首页</a>  |  <a href="#">意见反馈</a>  |  <a href="#">网站地图</a>  |  <a href="#">RSS订阅</a>  |  <a href="#">匿名投稿</a></p>
-        <p class="text-center">版权所有：共青团暨南大学珠海校区工作委员会&nbsp;&nbsp;&nbsp;
-        网站维护：暨南人网络联盟</p>
-        <p class="text-center">...</p>
-</footer>
-          </div>
-
-          <footer id="fooster_computer">
+<footer id="fooster_computer">
         <p class="text-center"><a href="#">网站首页</a>  |  <a href="#">意见反馈</a>  |  <a href="#">网站地图</a>  |  <a href="#">RSS订阅</a>  |  <a href="#">匿名投稿</a></p>
         <p class="text-center">版权所有：共青团暨南大学珠海校区工作委员会&nbsp;&nbsp;&nbsp;
         网站维护：暨南人网络联盟</p>
         <p class="text-center">...</p>
 </footer>
 
-      <script src="../../../../Public/js/jquery-1.11.1.min.js"></script>
-      <script src="../../../../Public/js/bootstrap.min.js"></script>
-      </body>
-   <script type="text/javascript">
+<script src="Public/js/jquery-1.11.1.min.js"></script>
+<script src="Public/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript">
    var p0=document.getElementById("set_range");
       var p1 = document.getElementById("search1");
       var p2=document.getElementById("round_img");
@@ -515,6 +498,6 @@
       nav_computer.style.display="none";
       title_img.style.display="none";
     //p1.className="bar2";
-  }
+    }
 </script>
 </html>
