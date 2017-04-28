@@ -26,7 +26,7 @@
           margin:15px;
         }
         body {
-        	background-image:url("../../../../Public/images/748001000820207069.jpg");
+        	background-image:url("Public/images/748001000820207069.jpg");
         	background-position:center; 
         	background-repeat:repeat;
         }
@@ -92,7 +92,7 @@
 </head>
 <body id="set_range">
     <div class="col-md-12" id="title_img">
-            <img style="display:block;width:100%;margin-top:10px;margin-bottom:10px;" src="Public/images/712824885406454302.jpg"">
+            <img style="display:block;width:100%;margin-top:10px;margin-bottom:10px;" src="Public/images/712824885406454302.jpg">
     </div>
 
 <!--电脑端的网页-->
