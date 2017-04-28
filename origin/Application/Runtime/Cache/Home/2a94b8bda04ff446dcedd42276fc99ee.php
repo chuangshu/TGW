@@ -8,12 +8,12 @@
 
   <link href="Public/css/sdcms.css" rel="stylesheet" type="text/css">
   <link href="Public/css/nav.color.css" rel="stylesheet">
-   <link rel="stylesheet" href="Public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Public/css/bootstrap.min.css">
      <title>共青团暨南大学珠海校区工作委员会</title>
     <!--[if lt IE 9]>
     	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <style>
+  <style>
         .setbord{  
         	    border-style:solid;
                 border-width:1px;
@@ -87,8 +87,7 @@
         padding-right:0px;
     
       }
-</style>
-
+  </style>
 </head>
 <body id="set_range">
     <div class="col-md-12" id="title_img">
@@ -450,13 +449,13 @@
           <p class="text-center">...</p>
   </footer>
 </div>
-
 <footer id="fooster_computer">
         <p class="text-center"><a href="#">网站首页</a>  |  <a href="#">意见反馈</a>  |  <a href="#">网站地图</a>  |  <a href="#">RSS订阅</a>  |  <a href="#">匿名投稿</a></p>
         <p class="text-center">版权所有：共青团暨南大学珠海校区工作委员会&nbsp;&nbsp;&nbsp;
-        网站维护：暨南人网络联盟</p>
+        网站维护：暨南人</p>
         <p class="text-center">...</p>
 </footer>
+
 
 <script src="Public/js/jquery-1.11.1.min.js"></script>
 <script src="Public/js/bootstrap.min.js"></script>
