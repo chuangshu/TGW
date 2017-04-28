@@ -3,6 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index($type = ''){
+        /*
         //获取排行
         $rankNews = D("Index")->getRank();
         //获取首页大图数据
@@ -28,15 +29,14 @@ class IndexController extends Controller {
             'catId' => 0,
 
         ));
-        /**
-         * 生成页面静态化
-         */
+        //生成页面静态化
+         
         if($type == 'buildHtml') {
             $this->buildhtml('index',HTML_PATH,'Index/index');
         }else{
             $this->display();
-        }
-
+        }*/
+    $this->display();
     }
 
     public function error($message = '') {
