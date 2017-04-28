@@ -1,0 +1,48 @@
+body {
+					padding-left: 150px;
+					padding-right: 150px;
+				}
+				span{
+					color: #FFFFFF;
+					float:right;
+				}/*新闻中心，组织建设，人物专访，图片专区标题右侧的超链接的字体样式*/
+                /*以下全是各个分区的标题处的颜色渐变*/
+				#title01{
+					height: 35px;
+					font-size:20px; 
+					background: -webkit-linear-gradient(white, red, white); /* Safari 5.1 - 6.0 */
+					background: -o-linear-gradient(white, red, white); /* Opera 11.1 - 12.0 */
+					background: -moz-linear-gradient(white, red, white); /* Firefox 3.6 - 15 */
+					background: linear-gradient(white, red, white); /* 标准的语法（必须放在最后） */
+				}
+				#title02{
+					background: -webkit-linear-gradient(white, red, white); /* Safari 5.1 - 6.0 */
+					background: -o-linear-gradient(white, red, white); /* Opera 11.1 - 12.0 */
+					background: -moz-linear-gradient(white, red, white); /* Firefox 3.6 - 15 */
+					background: linear-gradient(white, red, white); /* 标准的语法（必须放在最后） */
+				}
+				#title03{
+					background: -webkit-linear-gradient(white, red, white); /* Safari 5.1 - 6.0 */
+					background: -o-linear-gradient(white, red, white); /* Opera 11.1 - 12.0 */
+					background: -moz-linear-gradient(white, red, white); /* Firefox 3.6 - 15 */
+					background: linear-gradient(white, red, white); /* 标准的语法（必须放在最后） */
+				}
+				#title04{
+					background: -webkit-linear-gradient(white, red, white); /* Safari 5.1 - 6.0 */
+					background: -o-linear-gradient(white, red, white); /* Opera 11.1 - 12.0 */
+					background: -moz-linear-gradient(white, red, white); /* Firefox 3.6 - 15 */
+					background: linear-gradient(white, red, white); /* 标准的语法（必须放在最后） */
+				}
+				#title05{
+					background: -webkit-linear-gradient(white, red, white); /* Safari 5.1 - 6.0 */
+					background: -o-linear-gradient(white, red, white); /* Opera 11.1 - 12.0 */
+					background: -moz-linear-gradient(white, red, white); /* Firefox 3.6 - 15 */
+					background: linear-gradient(white, red, white); /* 标准的语法（必须放在最后） */
+				}
+				#title06{
+					background: -webkit-linear-gradient(white, red, white); /* Safari 5.1 - 6.0 */
+					background: -o-linear-gradient(white, red, white); /* Opera 11.1 - 12.0 */
+					background: -moz-linear-gradient(white, red, white); /* Firefox 3.6 - 15 */
+					background: linear-gradient(white, red, white); /* 标准的语法（必须放在最后） */
+				}
+				
