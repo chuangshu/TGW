@@ -98,7 +98,7 @@
 <!--电脑端的网页-->
   <div class="col-md-12" id="nav_computer">
       <ul class="nav nav-tabs" role="tablist">
-          <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li role="tab" data-toggle="tab"><a href="#"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; ?>
+          <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li role="tab" data-toggle="tab"><a href="#"><?php echo ($vo['name']); ?></a></li><?php endforeach; endif; ?>
 
       </ul>
   </div>
@@ -155,7 +155,7 @@
 <!--搜索框-->
 
 <!--图片轮换-->
-    <div id="myCarousel" class="carousel slide col-lg-6 col-md-6">
+    <div id="myCarousel" class="carousel slide col-lg-6 col-md-6 style="height: 300px"" >
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -167,18 +167,17 @@
         <!-- 轮播（Carousel）项目 -->
         <div>
         <div class="carousel-inner " >
-            <div class="item active">
-                <img src="upload/2017/04/28/59021d745b697.jpg" alt="<?php echo ($vo["title"]); ?>">
+            <div class="item active" style="height: 300px">
+                <a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                    <img src="upload/2017/04/28/59021d745b697.jpg" alt="<?php echo ($vo["title"]); ?>"  style="height: 300px" >
+                </a>
             </div>
             <?php if(is_array($carousel)): foreach($carousel as $key=>$vo): ?><div class="item">
+                    <a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
                     <img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>">
+                    </a>
                 </div><?php endforeach; endif; ?>
         </div>
-        <!-- 轮播（Carousel）导航 -->
-        <a class="carousel-control left" href="#myCarousel"
-           data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel"
-           data-slide="next">&rsaquo;</a>
     </div>
     </div>
 
@@ -201,7 +200,7 @@
   <!--搜索框-->
 
   <!--最新消息-->
-    <div class="col-md-12" id="newest_news">
+    <div class="col-md-12" id="newest_news" style="height: 300px">
       <div class="panel panel-primary setbord">
         <div class="panel-heading">
           <h3 class="panel-title">最新信息</h3>
@@ -210,11 +209,7 @@
           <ol class="list-unstyled">
                       <h3></h3>
                       <summary></summary>
-                      <li>...</li>
-                      <li>...</li>
-                      <li>...</li>
-                      <li>...</li>
-                      <li>...</li>
+              <?php if(is_array($latest)): foreach($latest as $key=>$vo): ?><li><?php echo ($vo["title"]); ?></li><?php endforeach; endif; ?>
           </ol>
         </div>
       </div>
@@ -227,68 +222,28 @@
     <img style="display:block;width:100%;" id="img_middle" src="Public/images/206888339129661881.jpg">
   </div>
 <!--广告位-->
-<!--图文信息--> 
+
+
+
+
+
+<!--图文信息-->
+
   <div class="col-md-12" id="images_information">
-    <div class="panel panel-primary setbord">
-      <div class="panel-heading">
-        <h3 class="panel-title">图文信息
-          <a href="#"><span style="float:right;">信息排行</span></a>
-          <a href="#"><span style="float:right;">最新信息&nbsp;&nbsp;</span></a>
-        </h3>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              图文信息
+          </div>
+          <div class="panel-body">
+              <?php if(is_array($pic)): foreach($pic as $key=>$vo): ?><div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                      <a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                          <img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>" width="100px">
+                      </a>
+                  </div><?php endforeach; endif; ?>
+          </div>
       </div>
-      <div class="panel-body">
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images/6.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
 
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images/7.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images/8.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images/9.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images./10.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images/11.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images./12.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images./13.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images./14.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
-
-        <div class="col-md-2" style=" border: 1px solid #990000" >
-          <img src="Public/images./15.jpg" class="img-responsive">
-            <h4>...</h4>
-        </div>
       </div>
-    </div>
-  </div>
 <!--图文信息-->         
 
 <!--新闻中心-->

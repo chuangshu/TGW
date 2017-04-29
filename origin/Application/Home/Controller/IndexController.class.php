@@ -9,11 +9,19 @@ class IndexController extends Controller {
 
         //获取图片轮播数据
         $carousel = D("PositionContent")->select(array('status'=>1 , 'position_id'=>8),4);
-        //返回所有键值
-        $carouselKey = array_keys($carousel);
-        //print_r($carouselKey);exit;
         $this->assign('carousel',$carousel);
-        $this->assign('carouselKey',$carouselKey);
+
+        //获取最新信息
+        $latest = D("PositionContent")->select(array('status'=>1 , 'position_id'=>7),8);
+        $this->assign('latest',$latest);
+
+        //获取图文信息
+        $pic = D("PositionContent")->select(array('status'=>1 , 'position_id'=>6),10);
+        $this->assign('pic',$pic);
+
+        //print_r($latest);exit;
+
+
 
 
 

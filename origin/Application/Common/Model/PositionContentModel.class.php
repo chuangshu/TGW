@@ -35,6 +35,7 @@ class PositionContentModel extends  Model
         }else{
             $list = $this->_db->where($data)->order('listorder desc,id desc')->select();
         }
+        //print_r($list);exit;
         return $list;
     }
 
