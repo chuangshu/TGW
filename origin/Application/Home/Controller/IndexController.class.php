@@ -3,6 +3,24 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index($type = ''){
+        //获取导航栏数据
+        $nav = D("Menu")->getBarMenus();
+        $this->assign('nav',$nav);
+
+        //获取图片轮播数据
+        $carousel = D("PositionContent")->select(array('status'=>1 , 'position_id'=>8),4);
+        //返回所有键值
+        $carouselKey = array_keys($carousel);
+        //print_r($carouselKey);exit;
+        $this->assign('carousel',$carousel);
+        $this->assign('carouselKey',$carouselKey);
+
+
+
+
+
+
+
         /*
         //获取排行
         $rankNews = D("Index")->getRank();
