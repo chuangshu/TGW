@@ -16,10 +16,27 @@ class IndexController extends Controller {
         $this->assign('latest',$latest);
 
         //获取图文信息
-        $pic = D("PositionContent")->select(array('status'=>1 , 'position_id'=>6),10);
+        $pic = D("PositionContent")->select(array('status'=>1 , 'position_id'=>6),9);
         $this->assign('pic',$pic);
+        //print_r($pic);exit;
 
-        //print_r($latest);exit;
+        //获取新闻中心
+        $news = D("PositionContent")->select(array('status'=>1 , 'position_id'=>5),8);
+        $this->assign('news',$news);
+
+        //获取组织建设
+        $construct = D("PositionContent")->select(array('status'=>1 , 'position_id'=>4),8);
+        $this->assign('construct',$construct);
+
+        //获取人物专访
+        $interview = D("PositionContent")->select(array('status'=>1 , 'position_id'=>3),8);
+        $this->assign('interview',$interview);
+
+        //获取图片专区
+        $pic2 = D("PositionContent")->select(array('status'=>1 , 'position_id'=>2),8);
+        $this->assign('pic2',$pic2);
+
+
 
 
 
