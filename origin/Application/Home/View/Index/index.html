@@ -1,29 +1,8 @@
 <include file="Index/header" />
-<body>
 
 
-<!-- 第一张大图  -->
-<div class="container" align="center">
-    <img src="Public/images/712824885406454302.jpg" class="img-responsive" alt="共青团暨南大学珠海校区工作委员会" width="100%">
-</div>
-<br />
-<!-- 第一张大图 -->
 
 
-<div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">首页</a></li>
-                    <foreach name="nav" item="vo">
-                        <li><a href="#">{$vo.name}</a></li>
-                    </foreach>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
 <div class="container">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div id="myCarousel" class="carousel slide">
@@ -38,11 +17,14 @@
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
+                    <a target="_blank" href="index.php?c=detail&id=1">
                     <img src="Public/images/001.jpg" alt="First slide">
                 </div>
                 <foreach name="carousel" item="vo">
                 <div class="item">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <img src="{$vo.thumb}" alt="{$vo.title}">
+                    </a>
                 </div>
                 </foreach>
             </div>
@@ -71,7 +53,9 @@
             </div>
             <div class="panel-body">
                 <foreach name="latest" item="vo">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <h>{$vo.title}</h>
+                    </a>
                     <br />
                 </foreach>
             </div>
@@ -101,8 +85,10 @@
         <div class="panel-body">
             <foreach name="pic" item="vo">
                 <div class="container col-lg-3 col-md-3 col-sm-5 col-xs-5">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <img src="{$vo.thumb}" alt="{$vo.title}" width="" height="140px">
                     <div class="container"><h>{$vo.title}</h></div>
+                    </a>
                     <br />
                 </div>
                 <div class="container col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
@@ -124,7 +110,9 @@
             </div>
             <div class="panel-body">
                 <foreach name="news" item="vo">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <h>{$vo.title}</h>
+                    </a>
                     <br />
                 </foreach>
             </div>
@@ -139,7 +127,9 @@
             </div>
             <div class="panel-body">
                 <foreach name="construct" item="vo">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <h>{$vo.title}</h>
+                    </a>
                     <br />
                 </foreach>
             </div>
@@ -154,7 +144,9 @@
             </div>
             <div class="panel-body">
                 <foreach name="interview" item="vo">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <h>{$vo.title}</h>
+                    </a>
                     <br />
                 </foreach>
             </div>
@@ -169,7 +161,9 @@
             </div>
             <div class="panel-body">
                 <foreach name="pic2" item="vo">
+                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
                     <h>{$vo.title}</h>
+                    </a>
                     <br />
                 </foreach>
             </div>
@@ -197,21 +191,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>tgw</td>
-                    <td>time</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>tgw</td>
-                    <td>time</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>tgw</td>
-                    <td>time</td>
-                </tr>
+                <foreach name="download" item="vo">
+                    <tr>
+                        <td>1</td>
+                        <td>tgw</td>
+                        <td>time</td>
+                    </tr>
+                </foreach>
                 </tbody>
             </table>
         </div>

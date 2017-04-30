@@ -111,7 +111,6 @@
                     <div class="input-group">
                         <span class="input-group-addon">推荐位</span>
                         <select class="form-control" name="position_id">
-                            <option value='' <?php if($positionId == ''): ?>selected = "selected"<?php endif; ?>>请选择推荐位</option>
                             <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>" <?php if($position['id'] == $positionId): ?>selected="selected"<?php endif; ?>><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </div>
@@ -153,7 +152,7 @@
                                 <td><?php echo ($vo["title"]); ?></td>
                                 <td><?php echo (date( "Y-m-d H:i" , $vo["create_time"])); ?></td>
                                 <td><?php echo (isThumb($vo["thumb"])); ?></td>
-                                <td><?php echo (status($vo["status"])); ?></td>
+                                <td><span  attr-status="<?php if($vo['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($vo["id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span></td>
                                 <td>
                                     <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($vo["id"]); ?>" ></span>
                                     <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($vo["id"]); ?>"  attr-message="删除">

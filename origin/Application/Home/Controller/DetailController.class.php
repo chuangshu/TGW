@@ -9,6 +9,8 @@ use Think\Controller;
  */
 class DetailController extends Controller {
     public function index() {
+        $nav = D("Menu")->getBarMenus();
+        $this->assign('nav',$nav);
         $id = intval($_GET['id']);
         if(!$id || $id< 0) {
             return $this->error("ID不合法");

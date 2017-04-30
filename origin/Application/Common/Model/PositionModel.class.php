@@ -68,7 +68,7 @@ class PositionModel extends Model {
             throw_exception("ID不合法");
         }
         if (!is_numeric($status) || !$status) {
-            throw_exception("状态不合法");
+            //throw_exception("状态不合法");
         }
         $data['status'] = $status;
         return $this->_db->where('id='.$id)->save($data);

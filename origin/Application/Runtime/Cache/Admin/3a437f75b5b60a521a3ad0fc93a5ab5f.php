@@ -123,7 +123,7 @@
                                 <td><?php echo ($positions["id"]); ?></td>
                                 <td><?php echo ($positions["name"]); ?></td>
                                 <td><?php echo (date("Y-m-d H:i",$positions["create_time"])); ?></td>
-                                <td><?php echo (status($positions["status"])); ?></td>
+                                <td><span  attr-status="<?php if($positions['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($positions["id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($positions["status"])); ?></span></td>
                                 <td>
                                     <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($positions["id"]); ?>" ></span>
                                     <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($positions["id"]); ?>"  attr-message="删除">

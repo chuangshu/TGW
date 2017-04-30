@@ -36,49 +36,17 @@ class IndexController extends Controller {
         $pic2 = D("PositionContent")->select(array('status'=>1 , 'position_id'=>2),8);
         $this->assign('pic2',$pic2);
 
+        //获取公事文件下载区
+        $download = D("PositionContent")->select(array('status'=>1 , 'position_id'=>1),5);
+        $this->assign('download',$download);
 
-
-
-
-
-
-
-
-
-
-        /*
-        //获取排行
-        $rankNews = D("Index")->getRank();
-        //获取首页大图数据
-        $topPicNews = D("PositionContent")->select(array('status'=>1 , 'position_id' =>4 ) , 1);
-        //print_r($topPicNews);
-        //首页3小图推荐
-        $topSmallNews = D("PositionContent")->select(array('status'=>1 , 'position_id' =>5 ) , 3);
-        //新闻
-        $listNews = D("News")->select(array('status' => 1 , 'thumb' => array('neq' ,'')) , 30);
-        //print_r($listNews);exit;
-        //print_r($listNews);exit;
-        //广告位
-        $advNews = D("PositionContent")->select(array('status' => 1 , 'position_id' => 6) , 2);
-
-
-
-        $this->assign('result' , array(
-            'topPicNews' => $topPicNews,
-            'topSmallNews' => $topSmallNews,
-            'listNews' => $listNews,
-            'advNews' =>$advNews,
-            'rankNews' => $rankNews,
-            'catId' => 0,
-
-        ));
         //生成页面静态化
          
         if($type == 'buildHtml') {
             $this->buildhtml('index',HTML_PATH,'Index/index');
         }else{
             $this->display();
-        }*/
+        }
     $this->display();
     }
 

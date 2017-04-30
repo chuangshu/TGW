@@ -7,12 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>sing后台管理平台</title>
+    <title>共青团暨南大学珠海校区工作委员会</title>
 
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Public/css/home/main.css" type="text/css" />
+    <script src="Public/js/jquery-1.11.1.min.js"></script>
+    <script src="Public/js/bootstrap.min.js"></script>
+
 </head>
+<body>
+<!-- 第一张大图  -->
+<div class="container" align="center">
+    <img src="Public/images/712824885406454302.jpg" class="img-responsive" alt="共青团暨南大学珠海校区工作委员会" width="100%">
+</div>
+<br />
+<!-- 第一张大图 -->
+
+
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.php">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <foreach name="nav" item="vo">
+                        <li <if condition="$vo['menu_id'] eq $_GET['id']">class="active"</if>>
+                        <a href="index.php?c=cat&id={$vo.menu_id}">{$vo.name}</a>
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
 
     
 

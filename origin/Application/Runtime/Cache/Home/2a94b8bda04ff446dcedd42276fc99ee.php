@@ -7,20 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>sing后台管理平台</title>
+    <title>共青团暨南大学珠海校区工作委员会</title>
 
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Public/css/home/main.css" type="text/css" />
+    <script src="Public/js/jquery-1.11.1.min.js"></script>
+    <script src="Public/js/bootstrap.min.js"></script>
+
 </head>
-
-    
-
-
-
 <body>
-
-
 <!-- 第一张大图  -->
 <div class="container" align="center">
     <img src="Public/images/712824885406454302.jpg" class="img-responsive" alt="共青团暨南大学珠海校区工作委员会" width="100%">
@@ -33,14 +28,27 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.php">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+                </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">首页</a></li>
-                    <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li><a href="#"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; ?>
+                    <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li <?php if($vo['menu_id'] == $_GET['id']): ?>class="active"<?php endif; ?>>
+                        <a href="index.php?c=cat&id=<?php echo ($vo["menu_id"]); ?>"><?php echo ($vo["name"]); ?></a>
+                        </li><?php endforeach; endif; ?>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
+
+    
+
+
+
+
+
+
+
 <div class="container">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div id="myCarousel" class="carousel slide">
@@ -55,10 +63,13 @@
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
+                    <a target="_blank" href="index.php?c=detail&id=1">
                     <img src="Public/images/001.jpg" alt="First slide">
                 </div>
                 <?php if(is_array($carousel)): foreach($carousel as $key=>$vo): ?><div class="item">
+                    <a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
                     <img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>">
+                    </a>
                 </div><?php endforeach; endif; ?>
             </div>
             <!-- 轮播（Carousel）导航 -->
@@ -85,7 +96,9 @@
                 </h3>
             </div>
             <div class="panel-body">
-                <?php if(is_array($latest)): foreach($latest as $key=>$vo): ?><h><?php echo ($vo["title"]); ?></h>
+                <?php if(is_array($latest)): foreach($latest as $key=>$vo): ?><a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                    <h><?php echo ($vo["title"]); ?></h>
+                    </a>
                     <br /><?php endforeach; endif; ?>
             </div>
         </div>
@@ -113,8 +126,10 @@
         </div>
         <div class="panel-body">
             <?php if(is_array($pic)): foreach($pic as $key=>$vo): ?><div class="container col-lg-3 col-md-3 col-sm-5 col-xs-5">
+                    <a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
                     <img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>" width="" height="140px">
                     <div class="container"><h><?php echo ($vo["title"]); ?></h></div>
+                    </a>
                     <br />
                 </div>
                 <div class="container col-lg-1 col-md-1 col-sm-1 col-xs-1"></div><?php endforeach; endif; ?>
@@ -134,7 +149,9 @@
                 </h3>
             </div>
             <div class="panel-body">
-                <?php if(is_array($news)): foreach($news as $key=>$vo): ?><h><?php echo ($vo["title"]); ?></h>
+                <?php if(is_array($news)): foreach($news as $key=>$vo): ?><a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                    <h><?php echo ($vo["title"]); ?></h>
+                    </a>
                     <br /><?php endforeach; endif; ?>
             </div>
         </div>
@@ -147,7 +164,9 @@
                 </h3>
             </div>
             <div class="panel-body">
-                <?php if(is_array($construct)): foreach($construct as $key=>$vo): ?><h><?php echo ($vo["title"]); ?></h>
+                <?php if(is_array($construct)): foreach($construct as $key=>$vo): ?><a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                    <h><?php echo ($vo["title"]); ?></h>
+                    </a>
                     <br /><?php endforeach; endif; ?>
             </div>
         </div>
@@ -160,7 +179,9 @@
                 </h3>
             </div>
             <div class="panel-body">
-                <?php if(is_array($interview)): foreach($interview as $key=>$vo): ?><h><?php echo ($vo["title"]); ?></h>
+                <?php if(is_array($interview)): foreach($interview as $key=>$vo): ?><a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                    <h><?php echo ($vo["title"]); ?></h>
+                    </a>
                     <br /><?php endforeach; endif; ?>
             </div>
         </div>
@@ -173,7 +194,9 @@
                 </h3>
             </div>
             <div class="panel-body">
-                <?php if(is_array($pic2)): foreach($pic2 as $key=>$vo): ?><h><?php echo ($vo["title"]); ?></h>
+                <?php if(is_array($pic2)): foreach($pic2 as $key=>$vo): ?><a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
+                    <h><?php echo ($vo["title"]); ?></h>
+                    </a>
                     <br /><?php endforeach; endif; ?>
             </div>
         </div>
@@ -200,21 +223,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>tgw</td>
-                    <td>time</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>tgw</td>
-                    <td>time</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>tgw</td>
-                    <td>time</td>
-                </tr>
+                <?php if(is_array($download)): foreach($download as $key=>$vo): ?><tr>
+                        <td>1</td>
+                        <td>tgw</td>
+                        <td>time</td>
+                    </tr><?php endforeach; endif; ?>
                 </tbody>
             </table>
         </div>

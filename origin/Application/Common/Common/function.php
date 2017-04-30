@@ -35,6 +35,17 @@ function status($status) {
     return $str;
 }
 
+function status1($status) {
+    if($status == 0 ){
+        $str = '未审核';
+    }elseif($status == 1) {
+        $str = '已审核';
+    }elseif($status == -1) {
+        $str = '删除';
+    }
+    return $str;
+}
+
 //获取菜单的链接
 function getAdminMenuUrl($nav) {
     $url = 'admin.php?c='.$nav['c'].'&a='.$nav['a'];

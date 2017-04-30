@@ -9,17 +9,21 @@ use Think\Controller;
  */
 class CatController extends Controller{
     public function index() {
+        $nav = D("Menu")->getBarMenus();
+        $this->assign('nav',$nav);
+
+
         $id = intval($_GET['id']);
         if(!$id) {
             return $this->error('ID不存在');
         }
 
-        $nav = D("Menu")->find($id);
-        if(!$nav || $nav['status'] != 1) {
-            $this->error('栏目id不存在或者状态不为正常');
-        }
-        $advNews = D("PositionContent")->select(array('status' => 1 , 'position_id' => 1) , 2);
-        $rankNews = D("Index")->getRank();
+        //$nav = D("Menu")->find($id);
+        //if(!$nav || $nav['status'] != 1) {
+        //    $this->error('栏目id不存在或者状态不为正常');
+        //}
+        //$advNews = D("PositionContent")->select(array('status' => 1 , 'position_id' => 1) , 2);
+        //$rankNews = D("Index")->getRank();
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
         $pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 20;
         $condition = array(
@@ -28,6 +32,7 @@ class CatController extends Controller{
             'catid' => $id,
         );
         $news = D("News")->getNews($condition,$page,$pageSize);
+        //print_r($news);exit;
         $count = D("News")->getNewsCount($condition);
         $res = new \Think\Page($count,$pageSize);
         $pageRes = $res->show();

@@ -76,7 +76,7 @@ class MenuModel extends Model {
     //获取前端列表
     public function getBarMenus() {
         $data = array(
-            'status' => array('eq',1),
+            'status' => 1,
             'type' => 0,
         );
         $res = $this->_db->where($data)

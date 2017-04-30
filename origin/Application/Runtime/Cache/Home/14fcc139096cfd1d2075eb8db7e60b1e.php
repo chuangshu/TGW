@@ -1,30 +1,50 @@
-<?php if (!defined('THINK_PATH')) exit(); $config = D("Basic")->select(); $navs = D("Menu")->getBarMenus(); ?>
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title><?php echo ($config["title"]); ?></title>
-    <meta name="keywords" content="<?php echo ($config["keywords"]); ?>">
-    <meta name="description" content="<?php echo ($config["description"]); ?>">
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>共青团暨南大学珠海校区工作委员会</title>
+
+    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
     <link rel="stylesheet" href="Public/css/home/main.css" type="text/css" />
+    <script src="Public/js/jquery-1.11.1.min.js"></script>
+    <script src="Public/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<header id="header">
-    <div class="navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="index.php">
-                    <img src="Public/images/logo.png" alt="">
-                </a>
+<!-- 第一张大图  -->
+<div class="container" align="center">
+    <img src="Public/images/712824885406454302.jpg" class="img-responsive" alt="共青团暨南大学珠海校区工作委员会" width="100%">
+</div>
+<br />
+<!-- 第一张大图 -->
+
+
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.php">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li <?php if($vo['menu_id'] == $_GET['id']): ?>class="active"<?php endif; ?>>
+                        <a href="index.php?c=cat&id=<?php echo ($vo["menu_id"]); ?>"><?php echo ($vo["name"]); ?></a>
+                        </li><?php endforeach; endif; ?>
+                </ul>
             </div>
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.php" <?php if($result['catId'] == 0): ?>class="curr"<?php endif; ?>>首页</a></li>
-                <?php if(is_array($navs)): foreach($navs as $key=>$vo): ?><li><a href="index.php?c=cat&id=<?php echo ($vo["menu_id"]); ?>" <?php if($vo['menu_id'] == $result['catId']): ?>class="curr"<?php endif; ?>><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; ?>
-            </ul>
         </div>
-    </div>
-</header>
+    </nav>
+</div>
+
+    
+
+
+
     <section>
         <div class="container">
             <div class="row">

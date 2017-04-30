@@ -43,8 +43,9 @@ class PositionContentModel extends  Model
         if(!is_numeric($id) || !$id){
             throw_exception("ID不合法");
         }
+        //dump($status);dump($id);exit;
         if(!is_numeric($status) || !$status){
-            throw_exception("状态不合法");
+            //throw_exception("状态不合法");
         }
 
         $data['status'] = $status;
