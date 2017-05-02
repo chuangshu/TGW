@@ -1,4 +1,9 @@
 <include file="Index/header" />
+<script>
+    $(document).ready(function(){
+        $('#circleContent').carousel({interval:5000});//每隔5秒自动轮播
+    });
+</script>
 
 
 
@@ -38,7 +43,9 @@
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <br />
         <div class="input-group" style="margin-top:0px positon:relative">
+
             <input type="text" class="form-control"placeholder="请输入字段名" / >
             <span class="input-group-btn">
                <button class="btn btn-info btn-search">查找</button>
@@ -83,16 +90,15 @@
             </h3>
         </div>
         <div class="panel-body">
-            <foreach name="pic" item="vo">
-                <div class="container col-lg-3 col-md-3 col-sm-5 col-xs-5">
+            <volist name="pic" id="vo">
+                <div class="container col-lg-3 col-md-3 col-sm-6 col-xs-10">
                     <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
-                    <img src="{$vo.thumb}" alt="{$vo.title}" width="" height="140px">
+                    <img src="{$vo.thumb}" alt="{$vo.title}" width="" height="140" class="img-responsive">
                     <div class="container"><h>{$vo.title}</h></div>
                     </a>
                     <br />
                 </div>
-                <div class="container col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-            </foreach>
+            </volist>
         </div>
     </div>
 </div>
@@ -231,4 +237,4 @@
 
 
 </body>
-<include file="Index/footer.html" />
+<include file="Index/footer" />

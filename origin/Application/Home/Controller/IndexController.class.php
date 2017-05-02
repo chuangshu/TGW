@@ -41,13 +41,13 @@ class IndexController extends Controller {
         $this->assign('download',$download);
 
         //生成页面静态化
-         
+
         if($type == 'buildHtml') {
             $this->buildhtml('index',HTML_PATH,'Index/index');
         }else{
             $this->display();
         }
-    $this->display();
+    //$this->display();
     }
 
     public function error($message = '') {

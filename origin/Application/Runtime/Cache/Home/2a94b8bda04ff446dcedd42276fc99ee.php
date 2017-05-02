@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="Public/css/home/main.css" type="text/css" />
     <script src="Public/js/jquery-1.11.1.min.js"></script>
     <script src="Public/js/bootstrap.min.js"></script>
-
+    
+    
+    <style>
+        body{
+            background-image:url("Public/images/748001000820207069.jpg");
+            background-position:center;
+            background-repeat:repeat;
+        }
+    </style>
 </head>
 <body>
 <!-- 第一张大图  -->
@@ -27,15 +35,25 @@
 <div class="container">
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="
+                #bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+
+            </div>
             <div>
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.php">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li <?php if($vo['menu_id'] == $_GET['id']): ?>class="active"<?php endif; ?>>
+                            <a href="index.php?c=cat&id=<?php echo ($vo["menu_id"]); ?>"><?php echo ($vo["name"]); ?></a>
+                            </li><?php endforeach; endif; ?>
+                    </ul>
                 </div>
-                <ul class="nav navbar-nav">
-                    <?php if(is_array($nav)): foreach($nav as $key=>$vo): ?><li <?php if($vo['menu_id'] == $_GET['id']): ?>class="active"<?php endif; ?>>
-                        <a href="index.php?c=cat&id=<?php echo ($vo["menu_id"]); ?>"><?php echo ($vo["name"]); ?></a>
-                        </li><?php endforeach; endif; ?>
-                </ul>
             </div>
         </div>
     </nav>
@@ -45,6 +63,11 @@
 
 
 
+<script>
+    $(document).ready(function(){
+        $('#circleContent').carousel({interval:5000});//每隔5秒自动轮播
+    });
+</script>
 
 
 
@@ -82,7 +105,9 @@
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <br />
         <div class="input-group" style="margin-top:0px positon:relative">
+
             <input type="text" class="form-control"placeholder="请输入字段名" / >
             <span class="input-group-btn">
                <button class="btn btn-info btn-search">查找</button>
@@ -125,14 +150,13 @@
             </h3>
         </div>
         <div class="panel-body">
-            <?php if(is_array($pic)): foreach($pic as $key=>$vo): ?><div class="container col-lg-3 col-md-3 col-sm-5 col-xs-5">
+            <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="container col-lg-3 col-md-3 col-sm-6 col-xs-10">
                     <a target="_blank" href="index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>">
-                    <img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>" width="" height="140px">
+                    <img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>" width="" height="140" class="img-responsive">
                     <div class="container"><h><?php echo ($vo["title"]); ?></h></div>
                     </a>
                     <br />
-                </div>
-                <div class="container col-lg-1 col-md-1 col-sm-1 col-xs-1"></div><?php endforeach; endif; ?>
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
     </div>
 </div>
@@ -261,3 +285,10 @@
 
 
 </body>
+<script src="Public/js/admin/common.js"></script>
+
+
+
+</body>
+
+</html>

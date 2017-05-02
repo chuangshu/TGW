@@ -1,0 +1,74 @@
+[ 2017-05-01T14:39:11+08:00 ] ::1 /TGW/origin/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019706s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) C:\wamp64\www\TGW\origin\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp64\www\TGW\origin\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc , menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `position_content` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 8 ORDER BY listorder desc,id desc LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 7 ORDER BY listorder desc,id desc LIMIT 8   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 6 ORDER BY listorder desc,id desc LIMIT 9   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 5 ORDER BY listorder desc,id desc LIMIT 8   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 4 ORDER BY listorder desc,id desc LIMIT 8   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 3 ORDER BY listorder desc,id desc LIMIT 8   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 2 ORDER BY listorder desc,id desc LIMIT 8   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: title C:\wamp64\www\TGW\origin\Application\Common\Model\PositionContentModel.class.php 第 29 行.
+SQL: SELECT * FROM `position_content` WHERE `status` = 1 AND `position_id` = 1 ORDER BY listorder desc,id desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(Index/footer.html): failed to open stream: No such file or directory C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012946s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(Index/footer.html): failed to open stream: No such file or directory C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.070604s ]
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+NOTIC: [8] Undefined index: id C:\wamp64\www\TGW\origin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087112s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.014029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.088320s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\View.class.php:95) C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\View.class.php:95) C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\View.class.php:95) C:\wamp64\www\TGW\origin\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009318s ]
+
