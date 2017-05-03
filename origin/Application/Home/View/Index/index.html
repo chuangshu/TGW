@@ -90,15 +90,27 @@
             </h3>
         </div>
         <div class="panel-body">
-            <volist name="pic" id="vo">
-                <div class="container col-lg-3 col-md-3 col-sm-6 col-xs-10">
-                    <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
-                    <img src="{$vo.thumb}" alt="{$vo.title}" width="" height="140" class="img-responsive">
-                    <div class="container"><h>{$vo.title}</h></div>
-                    </a>
-                    <br />
-                </div>
-            </volist>
+            <div class="row">
+                <volist name="pic" id="vo" offset="1" length='4'>
+                    <div class="container col-lg-3 col-md-3 col-sm-6 col-xs-10" >
+                        <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
+                        <img src="{$vo.thumb}" alt="{$vo.title}"  class="img-responsive">
+                        <div class="container"><h>{$vo.title}</h></div>
+                        </a>
+                    </div>
+                </volist>
+            </div>
+            <div class="clearfix visible-xs-block"></div>   
+            <div class="row">
+                <volist name="pic" id="vo" offset="5" length='8'>
+                    <div class="container col-lg-3 col-md-3 col-sm-6 col-xs-10" >
+                        <a target="_blank" href="index.php?c=detail&id={$vo.news_id}">
+                        <img src="{$vo.thumb}" alt="{$vo.title}"  class="img-responsive">
+                        <div class="container"><h>{$vo.title}</h></div>
+                        </a>
+                    </div>
+                </volist>
+            </div>
         </div>
     </div>
 </div>
